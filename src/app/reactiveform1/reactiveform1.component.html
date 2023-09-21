@@ -1,0 +1,30 @@
+<div class="home">
+    <h1>Angular Forms</h1>
+    <input type="text" name="email" [formControl] ="email"/>
+    <p class="red" *ngIf="email.errors?.['minlength']">Min 2 char should be there</p>
+<p class="red" *ngIf="email.errors?.['maxlength']">Max 10 char </p>
+<p class="red" *ngIf="email.errors?.['required']">Email is required</p>
+
+    <button (click)="showEmailDetails()">Click Me</button>
+</div>
+
+<!-- <p>reactiveform1 works!</p>
+<div class="home">
+    <h1>Angular Forms</h1>
+    <ol>
+        <li>FormControl</li>
+        <li>FormGroup</li>
+        <li>FormBuilder</li>
+    </ol>
+
+    <hr>
+
+    <h4>Login Form:</h4>
+    <form>
+        <label>Name:</label>
+        <input type="text" name="text"/>
+        <label>Password:</label>
+        <input type="password" name="password"/>
+        <button>Submit</button>
+    </form>
+</div> -->

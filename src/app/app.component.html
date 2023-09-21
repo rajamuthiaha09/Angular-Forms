@@ -1,0 +1,84 @@
+<!-- <div class="container">
+  <h3 class="title">My First Reactive Forms - " User Details! "</h3>
+  <br /><br />
+  <form [formGroup]='userForm' (ngSubmit)="onSubmit()">
+    <div class="row">
+      <div class="row col-sm-5">
+        <div class="form-group">
+          <label for="firstname">First Name</label>
+          <input type="text" id="firstname" name="firstname" formControlName="firstname" class="form-control"
+            autocomplete="off" />
+        </div>
+
+        <div class="form-group">
+          <label for="lastname">Last Name</label>
+          <input type="text" id="lastname" name="lastname" formControlName="lastname" class="form-control"
+            autocomplete="off">
+            <span class="help-block" *ngIf="!userForm.get('lastname')?.valid && userForm.get('lastname')?.touched">please enter valid name !</span>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="text" id="email" name="email" formControlName="email" class="form-control" autocomplete="off">
+          <span class="help-block" *ngIf="!userForm.get('email')?.valid && userForm.get('email')?.touched">please enter valid email !</span>
+        </div>
+
+        <div class="form-group">
+          <label for="phoneno">Phone Number</label>
+          <input type="tel" id="phoneno" name="phoneno" formControlName="phoneno" class="form-control" autocomplete="off" inputmode="numeric">
+        </div>
+
+        <div class="form-group">
+          <label for="gender">Gender</label>&nbsp;&nbsp;&nbsp;
+          <input type="radio" value="male" name="gender"  formControlName="gender"/>&nbsp;Male &nbsp;
+          <input type="radio" value="female" name="gender"  formControlName="gender" />&nbsp;Female
+        </div>
+
+        <div class="form-group">
+          <label for="isMarried" >Married</label>&nbsp;&nbsp;&nbsp;
+          <input type="checkbox" name="isMarried" formControlName="isMarried" />
+        </div>
+      </div>
+
+      <div class="row col-sm-2"></div>
+      <div class="row col-sm-5">
+        <div class="form-group" formGroupName="address">
+
+          <div class="form-group">
+            <label for="country">Country</label>
+            <select name="country" id="country" formControlName="country" class="form-control" autocomplete="off">
+              <option value="" disabled selected>Select a country</option> 
+              <option *ngFor="let c of countryList" [value]="c.countryname">
+                {{ c.countryname }}
+              </option>
+            </select>
+          </div>
+          
+
+          <div class="form-group">
+            <label for="city" >city</label>
+            <input type="text" name="city" class="form-control" formControlName="city" autocomplete="off"/>
+          </div>
+
+          <div class="form-group">
+            <label for="Street" >Street</label>
+            <input type="text" name="Street" class="form-control" formControlName="street" autocomplete="off"/>
+          </div>
+
+          <div class="form-group">
+            <label for="pincode">Pincode</label>
+            <input type="text" name="pincode" class="form-control" formControlName="pincode" autocomplete="off"/>
+          </div>
+        </div>
+        
+        <div class="form-group">
+          <button type="submit" class="btn btn-info" [disabled]="!userForm.valid">Submit</button>
+        </div>
+      </div>
+    </div>
+  </form>
+</div> -->
+
+
+<!-- <app-reactiveform1></app-reactiveform1> -->
+<app-rf2></app-rf2>

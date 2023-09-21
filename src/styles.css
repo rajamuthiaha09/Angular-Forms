@@ -1,0 +1,14 @@
+/* h3{
+    color: azure;
+    font-weight: bold;
+}
+.title{
+    text-align: center;
+    vertical-align: bottom;
+    background-color: aqua;
+    height: 40px;
+    padding-top: 5px;
+}
+.form-control.ng-touched.ng-invalid{
+    border: 1px solid rgb(255, 0, 0);
+} */

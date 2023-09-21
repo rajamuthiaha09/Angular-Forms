@@ -1,0 +1,15 @@
+.error{
+    background-color: rgb(255, 166, 0);
+    border: 1px solid red;
+    width: 11.9rem;
+    margin-left: 7.2rem;
+}
+label,input{
+    margin-left: 1rem;
+}
+button{
+    margin-left: 7.2rem;
+    border-radius: 5rem;
+    width: 11.9rem;
+    border: 2px solid rgb(4, 0, 255);
+}
